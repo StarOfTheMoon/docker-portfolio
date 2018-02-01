@@ -47,9 +47,11 @@ Run the project and enjoy
 docker-compose up 
 ```
 You can access with your local adresses with thoses ports : 
-| Django  | 8000 |
+
+| Server  | Port |
 |---------|------|
-| Admirer | 8080 |
+| Django  | 8000 |
+| Adminer | 8080 |
 
 ---------------------------------------------------------------------------------------------
 ## Commands
@@ -79,10 +81,10 @@ docker-compose down
 ```
 
 ### Ports 
+
 | Server  | Port |
 |---------|------|
 | Django  | 8000 |
-|---------|------|
-| Admirer | 8080 |
+| Adminer | 8080 |
 
 
