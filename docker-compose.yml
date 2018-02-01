@@ -4,6 +4,11 @@ services:
    db:
       image: postgres
       restart: always
+   adminer:
+      image: adminer
+      restart: always
+      ports:
+         - 8080:8080
    web:
       image: starofthemoon/portfolio:1.1
       command: /bin/bash -c "sleep 40;python manage.py runserver 0.0.0.0:8000"
@@ -15,4 +20,5 @@ services:
          - "8000:8000"
       depends_on:
          - db
+         - adminer
    
