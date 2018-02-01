@@ -35,7 +35,9 @@ $(document).ready(function(){
 			$name = $el.querySelector('.el__heading').innerHTML;
 			$name = $name.toLowerCase().replace(' ','-');
 			// change URL
-			window.history.replaceState(null, null, 'http://'+window.location.host+'/projects/'+name); 
+			console.log('coucou');
+			console.log($name);
+			window.history.replaceState(null, null, 'http://'+window.location.host+'/projects/'+$name); 
 		});
 	});
 
@@ -46,7 +48,7 @@ $(document).ready(function(){
 			document.querySelector('.el.s--active').classList.remove('s--active');
 			window.history.replaceState(null, null, 'http://'+window.location.host+'/projects/');
 		});
-  });
+	});
 }); 
 
 $(window).on('load', function(){

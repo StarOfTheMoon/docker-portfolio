@@ -9,6 +9,8 @@ services:
       restart: always
       ports:
          - 8080:8080
+      volumes:
+         - "./app/static/css/adminer.css:/var/www/html/adminer.css"
    web:
       image: starofthemoon/portfolio:1.1
       command: /bin/bash -c "sleep 40;python manage.py runserver 0.0.0.0:8000"
